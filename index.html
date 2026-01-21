@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Umbono Consulting | Management Solutions</title>
+  <meta name="description" content="Umbono Consulting helps teams make better decisions with data, dashboards, and operational performance systems." />
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Top bar -->
+  <header class="header" id="top">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="Umbono Consulting">
+        <img src="assets/logo.png" alt="Umbono Consulting logo" class="brand__logo" />
+        <div class="brand__text">
+          <div class="brand__name">UMBONO CONSULTING</div>
+          <div class="brand__tag" data-i18n="brand_tag">Management Solutions</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#work" data-i18n="nav_work">Work</a></li>
+          <li><a href="#about" data-i18n="nav_about">About</a></li>
+          <li><a class="btn btn--small" href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Language switch -->
+      <div class="lang-switch" aria-label="Language switch">
+        <button type="button" data-lang="en" class="lang-btn active">EN</button>
+        <button type="button" data-lang="fr" class="lang-btn">FR</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="pill" data-i18n="hero_pill">Data • Performance • Decision Systems</p>
+
+          <h1 data-i18n="hero_title">
+            Make decisions faster with dashboards, analytics, and operational clarity.
+          </h1>
+
+          <p class="lead" data-i18n="hero_lead">
+            Umbono Consulting designs practical management solutions: Power BI dashboards, KPI frameworks,
+            data pipelines, and performance tracking systems tailored for your team.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn" href="#contact" data-i18n="cta_book">Book a call</a>
+            <a class="btn btn--ghost" href="#services" data-i18n="cta_services">See services</a>
+          </div>
+
+          <div class="trust">
+            <div class="trust__item">
+              <div class="trust__num">+10</div>
+              <div class="trust__label" data-i18n="trust_1">Dashboards delivered</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num">2–6 w</div>
+              <div class="trust__label" data-i18n="trust_2">Typical delivery</div>
+            </div>
+            <div class="trust__item">
+              <div class="trust__num" data-i18n="trust_3_num">Bilingual</div>
+              <div class="trust__label" data-i18n="trust_3_label">EN / FR (optional)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card">
+          <div class="card">
+            <h3 data-i18n="card_title">What you get</h3>
+            <ul class="checklist">
+              <li data-i18n="card_li_1">Executive KPI scorecards & drill-down views</li>
+              <li data-i18n="card_li_2">Automated reporting (Excel / SQL / Python)</li>
+              <li data-i18n="card_li_3">Data quality checks & monitoring</li>
+              <li data-i18n="card_li_4">Training + handover documentation</li>
+            </ul>
+
+            <div class="card__actions">
+              <a class="btn btn--small" href="#work" data-i18n="card_btn_1">View examples</a>
+              <a class="link" href="#contact" data-i18n="card_btn_2">Request a quote →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- Services -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="services_title">Services</h2>
+          <p data-i18n="services_subtitle">Flexible packages: quick wins or full end-to-end delivery.</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="tile">
+            <h3 data-i18n="svc1_title">Power BI Dashboards</h3>
+            <p data-i18n="svc1_desc">Executive dashboards, operational monitoring, and KPI scorecards with clear storytelling.</p>
+            <ul>
+              <li data-i18n="svc1_li1">DAX measures & semantic model</li>
+              <li data-i18n="svc1_li2">Drill-through and tooltips</li>
+              <li data-i18n="svc1_li3">Performance optimization</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3 data-i18n="svc2_title">Data & Automation</h3>
+            <p data-i18n="svc2_desc">Build reliable pipelines and automate repetitive reporting tasks.</p>
+            <ul>
+              <li data-i18n="svc2_li1">SQL (Starburst/Trino, PostgreSQL, SQL Server)</li>
+              <li data-i18n="svc2_li2">Python ETL (pandas)</li>
+              <li data-i18n="svc2_li3">Scheduled refresh & alerts</li>
+            </ul>
+          </article>
+
+          <article class="tile">
+            <h3 data-i18n="svc3_title">Performance Management</h3>
+            <p data-i18n="svc3_desc">Define KPI frameworks and governance so teams can act on insights, not just view charts.</p>
+            <ul>
+              <li data-i18n="svc3_li1">KPI definitions & targets</li>
+              <li data-i18n="svc3_li2">Scorecards & routines</li>
+              <li data-i18n="svc3_li3">Training & documentation</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="banner">
+          <div>
+            <h3 data-i18n="banner_title">Need a fast audit?</h3>
+            <p data-i18n="banner_desc">We review your current reporting, data model, and KPIs — then propose a concrete improvement plan.</p>
+          </div>
+          <a class="btn" href="#contact" data-i18n="banner_btn">Request an audit</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work -->
+    <section class="section section--alt" id="work">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="work_title">Selected work</h2>
+          <p data-i18n="work_subtitle">Examples of problems we typically solve (replace with real case studies).</p>
+        </div>
+
+        <div class="grid grid--2">
+          <article class="case">
+            <h3 data-i18n="case1_title">Telco KPI Command Center</h3>
+            <p data-i18n="case1_desc">Unified churn, revenue-at-risk, and quality signals into a single executive view.</p>
+            <div class="tags">
+              <span>Power BI</span><span>DAX</span><span>SQL</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <h3 data-i18n="case2_title">Operations Reporting Automation</h3>
+            <p data-i18n="case2_desc">Automated Excel-to-dashboard pipeline with data checks and weekly refresh schedule.</p>
+            <div class="tags">
+              <span>Python</span><span>ETL</span><span>Governance</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <h3 data-i18n="case3_title">Customer Segmentation & Scoring</h3>
+            <p data-i18n="case3_desc">Built segmentation and scoring logic for targeting, retention, and performance tracking.</p>
+            <div class="tags">
+              <span data-i18n="tag_analytics">Analytics</span>
+              <span data-i18n="tag_modeling">Modeling</span>
+              <span data-i18n="tag_dashboards">Dashboards</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <h3 data-i18n="case4_title">Executive Scorecard System</h3>
+            <p data-i18n="case4_desc">Designed KPI definitions, target setting, and scorecard cadence for leadership reviews.</p>
+            <div class="tags">
+              <span data-i18n="tag_kpi">KPI Framework</span>
+              <span data-i18n="tag_pmo">PMO</span>
+              <span data-i18n="tag_enablement">Enablement</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="about_title">About Umbono Consulting</h2>
+          <p data-i18n="about_subtitle">Management solutions built around clarity, action, and measurable outcomes.</p>
+        </div>
+
+        <div class="about">
+          <div class="about__box">
+            <h3 data-i18n="about_how_title">How we work</h3>
+            <ol>
+              <li><b data-i18n="about_how_b1">Understand</b> <span data-i18n="about_how_1">your decision needs and data reality</span></li>
+              <li><b data-i18n="about_how_b2">Design</b> <span data-i18n="about_how_2">KPI logic + dashboard structure</span></li>
+              <li><b data-i18n="about_how_b3">Build</b> <span data-i18n="about_how_3">pipelines + visuals with performance in mind</span></li>
+              <li><b data-i18n="about_how_b4">Enable</b> <span data-i18n="about_how_4">your team with training & documentation</span></li>
+            </ol>
+          </div>
+
+          <div class="about__box">
+            <h3 data-i18n="about_ind_title">Industries</h3>
+            <ul>
+              <li data-i18n="about_ind_1">Telecom & connectivity</li>
+              <li data-i18n="about_ind_2">Energy & utilities</li>
+              <li data-i18n="about_ind_3">Logistics & supply chain</li>
+              <li data-i18n="about_ind_4">SMEs and growing operations teams</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2 data-i18n="contact_title">Contact</h2>
+          <p data-i18n="contact_subtitle">Tell us what you’re trying to achieve. We’ll reply with next steps.</p>
+        </div>
+
+        <div class="contact">
+          <form class="form" onsubmit="return handleContactSubmit(event)">
+            <div class="form__row">
+              <label>
+                <span data-i18n="form_name">Name</span>
+                <input required type="text" name="name" data-i18n-placeholder="ph_name" placeholder="Your name" />
+              </label>
+              <label>
+                <span data-i18n="form_email">Email</span>
+                <input required type="email" name="email" data-i18n-placeholder="ph_email" placeholder="you@company.com" />
+              </label>
+            </div>
+
+            <label>
+              <span data-i18n="form_need">What do you need?</span>
+              <select name="topic" required>
+                <option value="" selected disabled data-i18n="topic_select">Select one</option>
+                <option data-i18n="topic_1">Power BI dashboard</option>
+                <option data-i18n="topic_2">Data pipeline / automation</option>
+                <option data-i18n="topic_3">KPI framework / scorecard</option>
+                <option data-i18n="topic_4">Audit / improvement plan</option>
+                <option data-i18n="topic_5">Other</option>
+              </select>
+            </label>
+
+            <label>
+              <span data-i18n="form_message">Message</span>
+              <textarea required name="message" rows="5" data-i18n-placeholder="ph_message" placeholder="A short summary of your project..."></textarea>
+            </label>
+
+            <div class="form__actions">
+              <button class="btn" type="submit" data-i18n="form_send">Send message</button>
+              <a class="btn btn--ghost" id="whatsappLink" href="#" target="_blank" rel="noreferrer" data-i18n="form_whatsapp">WhatsApp</a>
+            </div>
+
+            <p class="form__note" data-i18n="form_note">
+              This form opens your email client (no data is stored on the site). If you want a real “submit-to-inbox”
+              form, we can connect it to Formspree or a Google Sheet.
+            </p>
+          </form>
+
+          <div class="contact__card">
+            <div class="card">
+              <h3 data-i18n="details_title">Business details</h3>
+              <p><b>Umbono Consulting</b><br/><span data-i18n="brand_tag">Management Solutions</span></p>
+              <p class="muted">
+                <span data-i18n="details_location">Abidjan • Remote available</span><br/>
+                <span data-i18n="details_days">Monday–Friday</span>
+              </p>
+
+              <div class="divider"></div>
+
+              <p><b data-i18n="details_email_label">Email:</b> <span class="muted">your-email@domain.com</span></p>
+              <p><b data-i18n="details_phone_label">Phone/WhatsApp:</b> <span class="muted">+225 XX XX XX XX XX</span></p>
+
+              <div class="divider"></div>
+
+              <p class="muted small" data-i18n="details_note">
+                Replace the email and phone above with your real contact info.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <img src="assets/logo.png" alt="Umbono Consulting logo" class="footer__logo" />
+        <div>
+          <div class="footer__name">UMBONO CONSULTING</div>
+          <div class="footer__tag" data-i18n="brand_tag">Management Solutions</div>
+        </div>
+      </div>
+
+      <div class="footer__right">
+        <a href="#top" data-i18n="footer_top">Back to top ↑</a>
+        <span class="muted">© <span id="year"></span> <span data-i18n="footer_right">Umbono Consulting</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
