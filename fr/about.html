@@ -1,34 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Umbono Consulting | About</title>
+  <title>Umbono Consulting | À propos</title>
+  <link rel="icon" href="../assets/logo.png" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
 
-<header class="header">
-  <!-- same header as other EN pages -->
+<body id="top">
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Umbono Consulting">
+      <img src="../assets/logo.png" alt="Logo Umbono Consulting" class="brand__logo" />
+      <div class="brand__text">
+        <div class="brand__name">UMBONO CONSULTING</div>
+        <div class="brand__tag">Management Solutions</div>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list" id="navList">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a class="btn btn--small" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switch" aria-label="Changement de langue">
+      <button type="button" data-lang="en" class="lang-btn">EN</button>
+      <button type="button" data-lang="fr" class="lang-btn active">FR</button>
+    </div>
+  </div>
 </header>
 
 <main class="section">
   <div class="container">
-    <h2>About Umbono Consulting</h2>
+    <h2>À propos d’Umbono Consulting</h2>
     <p>
-      Umbono Consulting supports organizations in transforming data into
-      clear, actionable insights for better decision-making.
+      Umbono Consulting aide les équipes à transformer leurs données en décisions claires et actionnables.
+      Nous mettons en place des tableaux de bord, des KPI et des reportings automatisés adaptés à votre réalité opérationnelle.
     </p>
 
-    <p>
-      We specialize in dashboards, analytics, performance management systems,
-      and data automation adapted to African operational realities.
-    </p>
+    <div class="card" style="margin-top:16px">
+      <h3>Notre approche</h3>
+      <p class="muted">
+        Nous partons de vos questions métier, définissons les indicateurs clés, connectons les sources de données,
+        puis livrons un système de pilotage utilisable immédiatement par vos équipes.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Avec qui travaillons-nous ?</h3>
+      <p class="muted">
+        PME, ONG et équipes corporate en Afrique de l’Ouest, qui recherchent plus de visibilité, un reporting plus rapide,
+        et de meilleures routines de décision.
+      </p>
+    </div>
   </div>
 </main>
 
 <footer class="footer">
-  <!-- same footer -->
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <img src="../assets/logo.png" alt="Logo Umbono Consulting" class="footer__logo" />
+      <div>
+        <div class="footer__name">UMBONO CONSULTING</div>
+        <div class="footer__tag">Management Solutions</div>
+      </div>
+    </div>
+    <div class="footer__right">
+      <a href="#top">Retour en haut ↑</a>
+      <span class="muted">© <span id="year"></span> Umbono Consulting</span>
+    </div>
+  </div>
 </footer>
 
 <script src="../js/app.js"></script>

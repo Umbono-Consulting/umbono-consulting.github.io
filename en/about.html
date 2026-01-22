@@ -4,31 +4,82 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Umbono Consulting | About</title>
+  <link rel="icon" href="../assets/logo.png" />
   <link rel="stylesheet" href="../css/styles.css" />
 </head>
-<body>
 
-<header class="header">
-  <!-- same header as other EN pages -->
+<body id="top">
+
+
+<header class="header" id="top">
+  <div class="container header__inner">
+    <a class="brand" href="index.html" aria-label="Umbono Consulting">
+      <img src="../assets/logo.png" alt="Umbono Consulting logo" class="brand__logo" />
+      <div class="brand__text">
+        <div class="brand__name">UMBONO CONSULTING</div>
+        <div class="brand__tag">Management Solutions</div>
+      </div>
+    </a>
+
+    <nav class="nav" aria-label="Primary navigation">
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__list" id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="btn btn--small" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="lang-switch" aria-label="Language switch">
+      <button type="button" data-lang="en" class="lang-btn active">EN</button>
+      <button type="button" data-lang="fr" class="lang-btn">FR</button>
+    </div>
+  </div>
 </header>
 
 <main class="section">
   <div class="container">
     <h2>About Umbono Consulting</h2>
     <p>
-      Umbono Consulting supports organizations in transforming data into
-      clear, actionable insights for better decision-making.
+      Umbono Consulting helps teams turn data into clear, actionable decisions.
+      We build dashboards, KPI systems, and automated reporting workflows that fit your operational reality.
     </p>
 
-    <p>
-      We specialize in dashboards, analytics, performance management systems,
-      and data automation adapted to African operational realities.
-    </p>
+    <div class="card" style="margin-top:16px">
+      <h3>Our approach</h3>
+      <p class="muted">
+        We start with your business questions, define the KPIs that matter, connect the data sources,
+        and deliver a practical system your team can use immediately.
+      </p>
+    </div>
+
+    <div class="card" style="margin-top:16px">
+      <h3>Who we work with</h3>
+      <p class="muted">
+        SMEs, NGOs, and corporate teams across West Africa who need better visibility, faster reporting,
+        and stronger decision routines.
+      </p>
+    </div>
   </div>
 </main>
 
 <footer class="footer">
-  <!-- same footer -->
+  <div class="container footer__inner">
+    <div class="footer__left">
+      <img src="../assets/logo.png" alt="Umbono Consulting logo" class="footer__logo" />
+      <div>
+        <div class="footer__name">UMBONO CONSULTING</div>
+        <div class="footer__tag">Management Solutions</div>
+      </div>
+    </div>
+    <div class="footer__right">
+      <a href="#top">Back to top ↑</a>
+      <span class="muted">© <span id="year"></span> Umbono Consulting</span>
+    </div>
+  </div>
 </footer>
 
 <script src="../js/app.js"></script>
