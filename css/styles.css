@@ -37,9 +37,9 @@ img{ max-width:100%; display:block; }
   width:250px;              /* ⬅ increased */
   height:250px;             /* ⬅ increased */
   object-fit:contain;
-  border-radius:14px;
+  border-radius:5px;
   background:rgba(255,255,255,.06);
-  padding:8px;
+  padding:3px;
 }
 
 .brand__name{ font-weight:800; letter-spacing:.5px; line-height:1; }
